@@ -41,8 +41,22 @@ function disable(btnId){
 
 
 function getInputFieldValue(inputId){
-    const costPerPlayerField = document.getElementById(inputId);
-    const costPerPlayerStr = costPerPlayerField.value;
-    const costPerPlayer = parseFloat(costPerPlayerStr);
-    return costPerPlayer;
+    const costingField = document.getElementById(inputId);
+    const costingStr = costingField.value;
+    const costing = parseFloat(costingStr);
+    return costing;
 }
+
+function getTextElementValue(elementId){
+    const element = document.getElementById(elementId);
+    const costingStr = element.innerText;
+    const costing = parseFloat(costingStr);
+    return costing;
+}
+
+function setTextElementValue(elementId,newValue){
+    const element = document.getElementById(elementId);
+    element.innerText = newValue;
+}
+
+
