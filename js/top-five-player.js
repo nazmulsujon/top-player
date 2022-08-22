@@ -13,10 +13,10 @@ function displayTopFivePlayer(){
     for(let i = 0; i < allFavPlayer.length; i++){
         const player = allFavPlayer[i];
        
-        if(allFavPlayer.length < 6){
+        if(allFavPlayer.length <= 5){
                 const li = document.createElement('li');
                 li.innerText =player;
-                selectedPlayer.appendChild(li);
+                selectedPlayer.appendChild(li);            
         }  
                    
     } 
@@ -26,8 +26,13 @@ function displayTopFivePlayer(){
 }
 
 function disable(btnId){
-    const button = document.getElementById(btnId);
-    button.disabled = true;
+    for(let i = 0; i < allFavPlayer.length; i++){
+        if(allFavPlayer.length <= 5 ){
+           const button = document.getElementById(btnId);
+           button.disabled = true;
+           button.style.backgroundColor = '#6c757d';
+        }
+    }
 }
 
 /*******add Event with neymar's button*******/

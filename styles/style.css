@@ -24,8 +24,18 @@ body{
     width: 60vw;
     height: 50vh;
 }
+.card-body .button{
+    color: white;
+    font-weight: bold;
+    background-color:#007bff;
+    padding: 10px 20px;
+}
+.card-body .button-hover:hover{
+    background-color: #3484ca;
+    transition: 0.3s;
+}
 .favourite-box{
-    height: 70vh;
+    height: 60vh;
     width: 100%;   
 }
 .caption-top-five{
