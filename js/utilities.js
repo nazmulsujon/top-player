@@ -37,9 +37,7 @@ function disable(btnId){
     }
 }
 
-
-
-
+/***** common function for get input field value by Id******/
 function getInputFieldValue(inputId){
     const costingField = document.getElementById(inputId);
     const costingStr = costingField.value;
@@ -47,6 +45,7 @@ function getInputFieldValue(inputId){
     return costing;
 }
 
+/***** common function for get text element value by Id******/
 function getTextElementValue(elementId){
     const element = document.getElementById(elementId);
     const costingStr = element.innerText;
@@ -54,6 +53,7 @@ function getTextElementValue(elementId){
     return costing;
 }
 
+/***** common function for set new value ******/
 function setTextElementValue(elementId,newValue){
     const element = document.getElementById(elementId);
     element.innerText = newValue;

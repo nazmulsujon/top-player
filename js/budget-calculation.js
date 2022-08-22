@@ -1,5 +1,4 @@
-
-
+/*******add Event listener with cal-per-player btn & input validation*******/
 document.getElementById('cal-per-player').addEventListener('click',function(){
     const costPerPlayer = getInputFieldValue('cost-per-player-field');
     const costPlayerTotal = costPerPlayer * (allFavPlayer.length);
@@ -10,6 +9,7 @@ document.getElementById('cal-per-player').addEventListener('click',function(){
     setTextElementValue('player-cost-total',costPlayerTotal);
 })
 
+/*******add Event listener with cal-total btn & input validation*******/
 document.getElementById('cal-total').addEventListener('click',function(){
 
     const costPlayerTotal = getTextElementValue('player-cost-total');
