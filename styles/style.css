@@ -24,13 +24,16 @@ body{
     width: 60vw;
     height: 50vh;
 }
-.card-body .button{
+.card-body .button,
+.button-div .button{
     color: white;
     font-weight: bold;
     background-color:#007bff;
-    padding: 10px 20px;
+    padding: 6px 30px;
+    border-radius: 3px;
 }
-.card-body .button-hover:hover{
+.card-body .button-hover:hover, 
+.button-div .button-hover:hover{
     background-color: #3484ca;
     transition: 0.3s;
 }
@@ -38,7 +41,12 @@ body{
     height: 60vh;
     width: 100%;   
 }
-.caption-top-five{
-    border-bottom: 5px double rgb(243, 106, 8) ;
-    /* padding-right: 20px; */
+.cal-box-caption,
+.caption-top-five {
+    color: #FF5E19;
+    border-bottom: 5px double #6D639A ;
+}
+.calculation-box{
+    height: 80vh;
+    width: 100%;
 }
