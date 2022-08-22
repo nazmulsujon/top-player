@@ -29,6 +29,6 @@ body{
     width: 100%;   
 }
 .caption-top-five{
-    border-bottom: 5px solid rgb(243, 106, 8) ;
+    border-bottom: 5px double rgb(243, 106, 8) ;
     /* padding-right: 20px; */
 }
