@@ -45,3 +45,24 @@ document.getElementById('btn-kaka').addEventListener('click',function(){
     displayTopFivePlayer();
     disable('btn-kaka');
 })
+/*******add Event listener with ronaldo's button*******/
+document.getElementById('btn-ronaldo').addEventListener('click',function(){
+    const playerName = addFavouritePlayerByID('ronaldo');
+    allFavPlayer.push(playerName);
+    displayTopFivePlayer();
+    disable('btn-ronaldo');
+})
+/*******add Event listener with luiz's button*******/
+document.getElementById('btn-luiz').addEventListener('click',function(){
+    const playerName = addFavouritePlayerByID('luiz');
+    allFavPlayer.push(playerName);
+    displayTopFivePlayer();
+    disable('btn-luiz');
+})
+/*******add Event listener with ronaldinho's button*******/
+document.getElementById('btn-ronaldinho').addEventListener('click',function(){
+    const playerName = addFavouritePlayerByID('ronaldinho');
+    allFavPlayer.push(playerName);
+    displayTopFivePlayer();
+    disable('btn-ronaldinho');
+})
