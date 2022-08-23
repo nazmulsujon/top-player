@@ -4,8 +4,7 @@ document.getElementById('btn-neymar').addEventListener('click',function(){
     const playerName = addFavouritePlayerByID('neymar');
     allFavPlayer.push(playerName);
     displayTopFivePlayer();
-    disable('btn-neymar');
-   
+    disable('btn-neymar');   
 })
 
 /*******add Event listener with messi's button*******/
